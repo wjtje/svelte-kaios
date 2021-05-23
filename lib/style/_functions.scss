@@ -1,0 +1,31 @@
+@import "./colors";
+@import "./fonts";
+
+@function KaiOS_color($color) {
+  @if map-has-key($map: $KaiOS_colors, $key: $color) {
+    @return #{map-get($map: $KaiOS_colors, $key: $color)};
+  } @else {
+    @warn "The color `#{$color}` doesn't exsist";
+    @return #000000;
+  }
+}
+
+@mixin KaiOS_font($font) {
+  @if map-has-key($map: $KaiOS_fonts, $key: $font) {
+    $font-style: map-get(
+      $map: $KaiOS_fonts,
+      $key: $font,
+    );
+
+    font-family: "Open Sans";
+    font-size: #{map-get($map: $font-style, $key: font-size)};
+    font-weight: #{map-get($map: $font-style, $key: font-weight)};
+    text-decoration-line: #{map-get(
+        $map: $font-style,
+        $key: text-decoration-line
+      )};
+    color: KaiOS_color(map-get($map: $font-style, $key: color));
+  } @else {
+    @warn "The font `#{$font} doesn't exsist`";
+  }
+}

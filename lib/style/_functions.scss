@@ -17,7 +17,11 @@
       $key: $font,
     );
 
+    // Default styles
     font-family: "Open Sans";
+    margin: 0;
+
+    // Custom styles for each font
     font-size: #{map-get($map: $font-style, $key: font-size)};
     font-weight: #{map-get($map: $font-style, $key: font-weight)};
     text-decoration-line: #{map-get(

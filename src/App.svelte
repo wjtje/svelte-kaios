@@ -1,14 +1,9 @@
+<script lang="ts">
+  import Header from "../lib/header/Header.svelte";
+</script>
+
 <main>
-  <h1>H1 / Header</h1>
-  <h2>Header of body text</h2>
-  <h3>Tab text</h3>
-  <h4>Separator text</h4>
-  <h5>Software key</h5>
-  <p class="pri">Primary text</p>
-  <p class="sec">Secondary text</p>
-  <p class="thi">Tertiary text</p>
-  <a href="#/link">Hyperlink</a>
-  <p class="btn">Button text</p>
+  <Header title="WhatsApp" color={["rgb(7, 94, 84)", "#fff"]} />
 </main>
 
 <style lang="scss">
@@ -16,49 +11,11 @@
   @import "../lib/style/functions";
 
   main {
-    text-align: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
-  }
-
-  h1 {
-    @include KaiOS_font(H1);
-  }
-
-  h2 {
-    @include KaiOS_font(H2);
-  }
-
-  h3 {
-    @include KaiOS_font(H3);
-  }
-
-  h4 {
-    @include KaiOS_font(H4);
-  }
-
-  h5 {
-    @include KaiOS_font(H5);
-  }
-
-  p.pri {
-    @include KaiOS_font(PRI);
-  }
-
-  p.sec {
-    @include KaiOS_font(SEC);
-  }
-
-  p.thi {
-    @include KaiOS_font(THI);
-  }
-
-  a {
-    @include KaiOS_font(LINK);
-  }
-
-  p.btn {
-    @include KaiOS_font(BTN);
+    background-color: KaiOS_color(GS00);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
   }
 </style>

@@ -10,6 +10,10 @@ Make good looking KaiOS apps with svelte.
 - Fonts
 - Header component
 
+## Things that are semi-'working'
+
+- Status bar
+
 ## Notes
 
 The dev build isn't working on a physical device, please use the production build if you are testing it on a physical device.

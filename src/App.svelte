@@ -1,9 +1,12 @@
 <script lang="ts">
   import Header from "../lib/header/Header.svelte";
+  import StatusBar from "../lib/status_bar/StatusBar.svelte";
+  import { ORANGE } from "../lib/style/colors.svelte";
 </script>
 
 <main>
-  <Header title="WhatsApp" color={["rgb(7, 94, 84)", "#fff"]} />
+  <StatusBar color={ORANGE} />
+  <Header title="Svelte" color={ORANGE} />
 </main>
 
 <style lang="scss">

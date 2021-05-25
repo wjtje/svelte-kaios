@@ -8,6 +8,7 @@ Make good looking KaiOS apps with svelte.
 
 - Color palette
 - Fonts
+- Header component
 
 ## Notes
 

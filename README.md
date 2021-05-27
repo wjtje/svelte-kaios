@@ -13,4 +13,5 @@ Make good looking KaiOS apps with svelte.
 
 ## Notes
 
-The dev build isn't working on a physical device, please use the production build if you are testing it on a physical device.
+- The dev build isn't working on a physical device, please use the production build if you are testing it on a physical device.
+- The status bar component doesn't work on a physical device, this component is only intendent as a development tool. DO NOT USE THIS IN PRODUCTION.

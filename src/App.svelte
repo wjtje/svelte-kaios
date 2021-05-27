@@ -6,7 +6,9 @@
 
 <main>
   <StatusBar color={ORANGE} />
-  <Header title="Svelte" color={ORANGE} />
+  <Header color={ORANGE}>
+    <h1>Svelte</h1>
+  </Header>
 </main>
 
 <style lang="scss">

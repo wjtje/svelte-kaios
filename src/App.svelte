@@ -1,6 +1,6 @@
 <script lang="ts">
   import Header from "../lib/header/Header.svelte";
-  import StatusBar from "../lib/status_bar/StatusBar.svelte";
+  import StatusBar from "../lib/statusBar/StatusBar.svelte";
   import { ORANGE } from "../lib/style/colors.svelte";
 </script>
 

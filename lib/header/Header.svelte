@@ -24,9 +24,10 @@
 
     text-align: center;
     line-height: 28px;
-  }
-  :global(h1) {
-    @include KaiOS_font(H1);
-    color: var(--foreground);
+
+    & :global(h1) {
+      @include KaiOS_font(H1);
+      color: var(--foreground);
+    }
   }
 </style>

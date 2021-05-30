@@ -1,5 +1,6 @@
 <script lang="ts">
   import Header from "../lib/header/Header.svelte";
+  import SoftwareKey from "../lib/softwareKey/SoftwareKey.svelte";
   import StatusBar from "../lib/statusBar/StatusBar.svelte";
   import { ORANGE } from "../lib/style/colors.svelte";
 </script>
@@ -9,6 +10,11 @@
   <Header color={ORANGE}>
     <h1>Svelte</h1>
   </Header>
+  <SoftwareKey>
+    <h5 slot="left">Left</h5>
+    <h5 slot="center">Select</h5>
+    <h5 slot="right">Right</h5>
+  </SoftwareKey>
 </main>
 
 <style lang="scss">

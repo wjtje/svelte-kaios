@@ -23,6 +23,8 @@ npm run dev
 
 ### On a real device
 
+Change the script line in the public/index.html file
+
 ```
 npm i
 npm run build && npm start -- --host

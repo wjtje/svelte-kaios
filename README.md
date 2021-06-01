@@ -6,10 +6,27 @@ Make good looking KaiOS apps with svelte.
 
 ## Index
 
+- Getting started
 - Things that are 'working'
 - Things that are currently being worked on
 - Notes
 - Basic app template
+
+## Getting started
+
+### On a local machine
+
+```
+npm i
+npm run dev
+```
+
+### On a real device
+
+```
+npm i
+npm run build && npm start -- --host
+```
 
 ## Things that are 'working'
 

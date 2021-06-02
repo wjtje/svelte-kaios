@@ -21,7 +21,7 @@
   div {
     width: 100%;
     height: 30px;
-    padding: 0 5px;
+    padding: 0 6px;
     overflow: hidden;
     box-sizing: border-box;
 
@@ -33,7 +33,8 @@
     // All keys
     & :global(h5) {
       @include KaiOS_font(H5);
-      width: 33.3333%;
+      overflow: hidden;
+      width: 33.3333333333%;
     }
 
     // Left key
@@ -45,6 +46,8 @@
     & :global(h5:nth-child(2)) {
       text-align: center;
       text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
     }
 
     // Right key

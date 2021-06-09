@@ -19,6 +19,7 @@
     width: 100%;
     height: 28px;
     overflow: hidden;
+    flex-shrink: 0;
 
     background-color: var(--background);
 

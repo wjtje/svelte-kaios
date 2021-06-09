@@ -24,6 +24,7 @@
     padding: 0 6px;
     overflow: hidden;
     box-sizing: border-box;
+    flex-shrink: 0;
 
     background-color: KaiOS_color(GS20);
 

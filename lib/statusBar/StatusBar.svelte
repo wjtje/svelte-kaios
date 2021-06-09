@@ -24,6 +24,7 @@
   div {
     width: 100%;
     height: 26px;
+    flex-shrink: 0;
 
     background-color: var(--background);
     color: var(--foreground);

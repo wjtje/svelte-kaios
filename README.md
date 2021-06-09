@@ -57,12 +57,10 @@ This a basic template showing a few different components
   import ListItem from "../lib/list/ListItem.svelte";
   import ListItemContent from "../lib/list/ListItemContent.svelte";
   import SoftwareKey from "../lib/softwareKey/SoftwareKey.svelte";
-  import StatusBar from "../lib/statusBar/StatusBar.svelte";
   import { ORANGE } from "../lib/style/colors.svelte";
 </script>
 
 <AppWindow>
-  <StatusBar color="{ORANGE}" />
   <header color="{ORANGE}">
     <h1>Svelte</h1>
   </header>

@@ -2,5 +2,10 @@
   "extends": "@tsconfig/svelte/tsconfig.json",
 
   "include": ["src/**/*", "lib/@types/*"],
-  "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
+  "exclude": ["node_modules/*", "__sapper__/*", "public/*"],
+
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": true
+  }
 }

@@ -37,15 +37,13 @@ npm run build && npm start -- --host
 - Header
 - Status bar
 - AppWindow
-
-## Things that are currently being worked on
-
 - List
 
 ## Notes
 
 - The dev build isn't working on a physical device, please use the production build if you are testing it on a physical device.
 - The status bar component doesn't work on a physical device, this component is only intendent as a development tool. DO NOT USE THIS IN PRODUCTION.
+- The arrow keys do not working correcty in a normal browser, please use a real device for testing this.
 
 ## Basic app template
 
@@ -56,6 +54,8 @@ This a basic template showing a few different components
   import AppWindow from "../lib/appWindow/appWindow.svelte";
   import Header from "../lib/header/Header.svelte";
   import List from "../lib/list/List.svelte";
+  import ListItem from "../lib/list/ListItem.svelte";
+  import ListItemContent from "../lib/list/ListItemContent.svelte";
   import SoftwareKey from "../lib/softwareKey/SoftwareKey.svelte";
   import StatusBar from "../lib/statusBar/StatusBar.svelte";
   import { ORANGE } from "../lib/style/colors.svelte";
@@ -67,7 +67,14 @@ This a basic template showing a few different components
     <h1>Svelte</h1>
   </header>
 
-  <List />
+  <List>
+    <ListItem>
+      <ListItemContent primary="Hello" secondary="World" />
+    </ListItem>
+    <ListItem>
+      <ListItemContent primary="KaiOS + Svelte" />
+    </ListItem>
+  </List>
 
   <SoftwareKey>
     <h5 slot="left">Left</h5>

@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+    paths_ignore:
+      - "**.md"
+      - ".vscode/"
+  pull_request:
+    paths_ignore:
+      - "**.md"
+      - ".vscode/"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 15.x]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2.3.4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run validate
+      - run: npm run build

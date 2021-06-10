@@ -11,6 +11,12 @@
 <style lang="scss">
   @import "../style/functions";
 
+  div {
+    overflow: hidden;
+    margin: 0 5px;
+    flex-shrink: 1;
+  }
+
   p {
     margin: 4px 0;
   }

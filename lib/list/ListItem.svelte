@@ -79,7 +79,7 @@
 
   section {
     height: 60px;
-    padding: 0 10px;
+    padding: 0 5px;
     background-color: KaiOS_color(GS00);
     display: flex;
     align-items: center;

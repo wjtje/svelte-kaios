@@ -4,6 +4,7 @@
   import List from "../lib/list/List.svelte";
   import ListItem from "../lib/list/ListItem.svelte";
   import ListItemContent from "../lib/list/ListItemContent.svelte";
+  import ListItemImage from "../lib/list/ListItemImage.svelte";
   import SoftwareKey from "../lib/softwareKey/SoftwareKey.svelte";
   // import StatusBar from "../lib/statusBar/StatusBar.svelte";
   import { ORANGE } from "../lib/style/colors.svelte";
@@ -23,7 +24,11 @@
         count++;
       }}
     >
-      <ListItemContent primary="Counter" secondary={count} />
+      <ListItemImage src="nature.png" alt="Nature!" />
+      <ListItemContent
+        primary="Countexxxxxxxxxxxxxxxxxxxxxxxxr"
+        secondary={count}
+      />
     </ListItem>
 
     <ListItem>

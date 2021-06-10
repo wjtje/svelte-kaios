@@ -1,6 +1,12 @@
 <script lang="ts">
-  import { getContext } from "svelte";
+  import { getContext, onMount } from "svelte";
   import type { Writable } from "svelte/store";
+  import type { softKeyType } from "../softwareKey/SoftwareKey.svelte";
+
+  // Default on click handler
+  export let onClick = () => {
+    console.log(`KaiUI-svelte (ListItem (${index})): Default onClick`);
+  };
 
   // Dom element
   let listItemElement: HTMLSelectElement | undefined;
@@ -13,6 +19,10 @@
     index = currentIndex;
     return currentIndex + 1;
   });
+
+  // Get the softKeyActions
+  const softKeyActionsWritable =
+    getContext<Writable<softKeyType>>("softKeyActions");
 
   // Listen to changes on the activeIndex
   const activeIndexWritable = getContext<Writable<number>>("listActive");
@@ -31,6 +41,26 @@
           listItemElement.offsetTop -
           listContainer?.offsetTop -
           (listContainer?.clientHeight - listItemElement.clientHeight) / 2,
+      });
+
+      // Change the center action
+      softKeyActionsWritable.update((current) => {
+        return {
+          ...current,
+          center: onClick,
+        };
+      });
+    }
+  });
+
+  onMount(() => {
+    // Make the first item active
+    if (index === 1) {
+      softKeyActionsWritable.update((current) => {
+        return {
+          ...current,
+          center: onClick,
+        };
       });
     }
   });

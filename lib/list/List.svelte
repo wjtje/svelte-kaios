@@ -21,15 +21,16 @@
    * @param e KeyEvent
    */
   function handleKeyEvent(e: KeyboardEvent) {
-    console.log(`KaiUI-svelte (List): keycode: ${e.key}`);
     switch (e.key) {
       case "ArrowDown":
+        console.log(`KaiUI-svelte (List): keycode: ${e.key}`);
         e.preventDefault();
         activeIndex.update((currentIndex) => {
           return (currentIndex % (listElementCount - 1)) + 1;
         });
         break;
       case "ArrowUp":
+        console.log(`KaiUI-svelte (List): keycode: ${e.key}`);
         e.preventDefault();
         activeIndex.update((currentIndex) => {
           return currentIndex - 1 < 1 ? listElementCount - 1 : currentIndex - 1;

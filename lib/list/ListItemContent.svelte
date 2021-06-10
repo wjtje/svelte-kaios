@@ -1,6 +1,6 @@
 <script lang="ts">
-  export let primary: string = "";
-  export let secondary: string = "";
+  export let primary: string | number = "";
+  export let secondary: string | number = "";
 </script>
 
 <div>

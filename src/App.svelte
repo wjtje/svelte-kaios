@@ -7,6 +7,8 @@
   import SoftwareKey from "../lib/softwareKey/SoftwareKey.svelte";
   // import StatusBar from "../lib/statusBar/StatusBar.svelte";
   import { ORANGE } from "../lib/style/colors.svelte";
+
+  let count = 0;
 </script>
 
 <AppWindow>
@@ -16,6 +18,14 @@
   </Header>
 
   <List>
+    <ListItem
+      onClick={() => {
+        count++;
+      }}
+    >
+      <ListItemContent primary="Counter" secondary={count} />
+    </ListItem>
+
     <ListItem>
       <ListItemContent primary="Airplane Mode" secondary="Off" />
     </ListItem>

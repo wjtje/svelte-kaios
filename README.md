@@ -43,7 +43,7 @@ npm run build && npm start -- --host
 
 - The dev build isn't working on a physical device, please use the production build if you are testing it on a physical device.
 - The status bar component doesn't work on a physical device, this component is only intendent as a development tool. DO NOT USE THIS IN PRODUCTION.
-- The arrow keys do not working correcty in a normal browser, please use a real device for testing this.
+- The arrow keys do not work correcty in a normal browser, please use a real device for testing this.
 
 ## Basic app template
 

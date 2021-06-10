@@ -24,11 +24,13 @@
     console.log(`KaiUI-svelte (List): keycode: ${e.key}`);
     switch (e.key) {
       case "ArrowDown":
+        e.preventDefault();
         activeIndex.update((currentIndex) => {
           return (currentIndex % (listElementCount - 1)) + 1;
         });
         break;
       case "ArrowUp":
+        e.preventDefault();
         activeIndex.update((currentIndex) => {
           return currentIndex - 1 < 1 ? listElementCount - 1 : currentIndex - 1;
         });

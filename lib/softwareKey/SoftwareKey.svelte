@@ -1,4 +1,54 @@
-<script lang="ts"></script>
+<script lang="ts" context="module">
+  export interface softKeyType {
+    left: () => void;
+    center: () => void;
+    right: () => void;
+  }
+</script>
+
+<script lang="ts">
+  import { getContext, onMount } from "svelte";
+  import type { Writable } from "svelte/store";
+
+  // Get access to the current software key status
+  const softKeyActionsWritable =
+    getContext<Writable<softKeyType>>("softKeyActions");
+  let softKeyActions: softKeyType;
+
+  softKeyActionsWritable.subscribe((actions) => {
+    softKeyActions = actions;
+  });
+
+  // Handle the correct softwareKey
+  function handleKeyEvent(event: KeyboardEvent) {
+    switch (event.key) {
+      case "SoftLeft":
+        console.log(`KaiUI-svelte (SoftwareKey): keycode: ${event.key}`);
+        softKeyActions?.left();
+        break;
+      case "SoftRight":
+        console.log(`KaiUI-svelte (SoftwareKey): keycode: ${event.key}`);
+        softKeyActions?.right();
+        break;
+      case "Enter":
+        console.log(`KaiUI-svelte (SoftwareKey): keycode: ${event.key}`);
+        softKeyActions?.center();
+        break;
+    }
+  }
+
+  onMount(() => {
+    // Add the event listener
+    console.log(`KaiUI-svelte (SoftwareKey): Adding event listener`);
+    document.body.addEventListener("keydown", handleKeyEvent);
+
+    return () => {
+      // Remove the event listener
+      console.log(`KaiUI-svelte (SoftwareKey): Removing event listener`);
+      document.body.removeEventListener("keydown", handleKeyEvent);
+    };
+  });
+</script>
 
 <!-- svelte-ignore a11y-missing-content -->
 <div>

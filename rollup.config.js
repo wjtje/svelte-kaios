@@ -7,6 +7,7 @@ import sveltePreprocess from 'svelte-preprocess'
 import typescript from '@rollup/plugin-typescript'
 import css from 'rollup-plugin-css-only'
 import { svelteSVG } from 'rollup-plugin-svelte-svg'
+import { babel } from '@rollup/plugin-babel'
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -67,6 +68,18 @@ export default {
 		typescript({
 			sourceMap: !production,
 			inlineSources: !production
+		}),
+
+		// If building for production transpile with babel for firefox 48 (KaiOS 2.5)
+		production && babel({
+			babelHelpers: 'bundled',
+			presets: [
+				['@babel/preset-env', {
+					targets: {
+						"firefox": "48"
+					}
+				}]
+			]
 		}),
 
 		// In dev mode, call `npm run start` once

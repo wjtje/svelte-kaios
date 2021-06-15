@@ -72,14 +72,7 @@ export default {
 
 		// If building for production transpile with babel for firefox 48 (KaiOS 2.5)
 		production && babel({
-			babelHelpers: 'bundled',
-			presets: [
-				['@babel/preset-env', {
-					targets: {
-						"firefox": "48"
-					}
-				}]
-			]
+			babelHelpers: 'bundled'
 		}),
 
 		// In dev mode, call `npm run start` once

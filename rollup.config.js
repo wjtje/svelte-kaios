@@ -38,7 +38,8 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
+		file: 'public/build/bundle.js',
+		strict: false
 	},
 	plugins: [
 		svelte({
@@ -72,7 +73,7 @@ export default {
 
 		// If building for production transpile with babel for firefox 48 (KaiOS 2.5)
 		production && babel({
-			babelHelpers: 'bundled'
+			babelHelpers: 'runtime'
 		}),
 
 		// In dev mode, call `npm run start` once

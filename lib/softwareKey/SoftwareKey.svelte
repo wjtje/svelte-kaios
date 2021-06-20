@@ -1,8 +1,9 @@
 <script lang="ts" context="module">
   export interface softKeyType {
-    left: () => void;
-    center: () => void;
-    right: () => void;
+    left: (event: KeyboardEvent) => void;
+    center: (event: KeyboardEvent) => void;
+    right: (event: KeyboardEvent) => void;
+    back: (event: KeyboardEvent) => void;
   }
 </script>
 
@@ -24,15 +25,19 @@
     switch (event.key) {
       case "SoftLeft":
         console.log(`KaiUI-svelte (SoftwareKey): keycode: ${event.key}`);
-        softKeyActions?.left();
+        softKeyActions?.left(event);
         break;
       case "SoftRight":
         console.log(`KaiUI-svelte (SoftwareKey): keycode: ${event.key}`);
-        softKeyActions?.right();
+        softKeyActions?.right(event);
         break;
       case "Enter":
         console.log(`KaiUI-svelte (SoftwareKey): keycode: ${event.key}`);
-        softKeyActions?.center();
+        softKeyActions?.center(event);
+        break;
+      case "Backspace":
+        console.log(`KaiUI-svelte (SoftwareKey): keycode: ${event.key}`);
+        softKeyActions?.back(event);
         break;
     }
   }

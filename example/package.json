@@ -38,11 +38,11 @@
     "@babel/runtime": "^7.14.6",
     "@skui/appwindow": "file:../packages/appWindow",
     "@skui/header": "file:../packages/header",
-    "@skui/style": "file:../packages/style",
-    "@skui/types": "file:../packages/types",
     "@skui/list": "file:../packages/list",
     "@skui/softwarekey": "file:../packages/softwareKey",
     "@skui/statusbar": "file:../packages/statusbar",
+    "@skui/style": "file:../packages/style",
+    "@skui/types": "file:../packages/types",
     "sirv-cli": "^1.0.12"
   }
 }

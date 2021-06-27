@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "target": "es6",
+    "module": "ES6",
+    "strict": true,
+    "declaration": true,
+    "sourceMap": false,
+    "outDir": "./",
+    "types": ["svelte"],
+    "typeRoots": ["svg.d.ts"]
+  },
+  "exclude": ["node_modules"]
+}

@@ -1,4 +1,10 @@
-/node_modules/
-/public/build/
+node_modules/
+dist/
+/example/public/build/
 
 .DS_Store
+
+# Remove build files from packages
+/packages/*/node_modules/
+/packages/*/index.js
+/packages/*/index.d.ts

@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+
+  "include": ["src/**/*"],
+  "exclude": ["__sapper__/*", "public/*"],
+
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": true,
+    "types": ["svelte"]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@skui/header",
+  "version": "0.1.0",
+  "description": "Svelte KaiOS UI - Header",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "validate": "svelte-check",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjtje/svelte-kaios.git"
+  },
+  "author": "Wouter van der Wal <wjtje.wal@outlook.com> (https://wjtje.ga)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wjtje/svelte-kaios/issues"
+  },
+  "homepage": "https://github.com/wjtje/svelte-kaios#readme",
+  "dependencies": {
+    "@skui/style": "^0.1.0",
+    "@skui/types": "^0.1.0",
+    "svelte": "^3.38.3"
+  }
+}

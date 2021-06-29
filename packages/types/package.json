@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "description": "Svelte KaiOS UI - Types",
   "type": "module",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "link": "npm link",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {

@@ -1,6 +1,6 @@
 {
   "name": "@skui/header",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Svelte KaiOS UI - Header",
   "main": "index.js",
   "scripts": {
@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/wjtje/svelte-kaios#readme",
   "dependencies": {
-    "@skui/style": "^0.1.0",
-    "@skui/types": "^0.1.0",
+    "@skui/style": "^0.1.1",
+    "@skui/types": "^0.1.1",
     "svelte": "^3.38.3"
   }
 }

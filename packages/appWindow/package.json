@@ -1,6 +1,6 @@
 {
   "name": "@skui/appwindow",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Svelte KaiOS UI - AppWindow",
   "main": "index.ts",
   "scripts": {
@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/wjtje/svelte-kaios#readme",
   "dependencies": {
-    "@skui/types": "^0.1.0",
-    "tinro": "^0.6.4",
-    "@babel/runtime": "^7.14.6"
+    "@babel/runtime": "^7.14.6",
+    "@skui/types": "^0.1.1",
+    "tinro": "^0.6.4"
   }
 }

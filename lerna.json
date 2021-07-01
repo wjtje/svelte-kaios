@@ -2,13 +2,5 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.1.0",
-  "command": {
-    "version": {
-      "allowBranch": [
-        "master"
-      ],
-      "conventionalCommits": true
-    }
-  }
+  "version": "0.1.0"
 }

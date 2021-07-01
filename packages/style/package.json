@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/wjtje/svelte-kaios/issues"
   },
-  "homepage": "https://github.com/wjtje/svelte-kaios#readme",
+  "homepage": "https://github.com/wjtje/svelte-kaios/tree/main/packages/style",
   "dependencies": {
     "@skui/types": "^0.2.0"
   },

@@ -21,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/wjtje/svelte-kaios/issues"
   },
-  "homepage": "https://github.com/wjtje/svelte-kaios#readme"
+  "homepage": "https://github.com/wjtje/svelte-kaios#readme",
+  "gitHead": "5f20aebfb700fbb238b2236f511264e40f0f191f"
 }

@@ -39,6 +39,7 @@
     "@skui/appwindow": "file:../packages/appWindow",
     "@skui/header": "file:../packages/header",
     "@skui/list": "file:../packages/list",
+    "@skui/separator": "file:../packages/separator",
     "@skui/softwarekey": "file:../packages/softwareKey",
     "@skui/statusbar": "file:../packages/statusbar",
     "@skui/style": "file:../packages/style",

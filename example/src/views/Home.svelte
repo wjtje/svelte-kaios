@@ -6,6 +6,7 @@
   import { List, ListItem, ListItemContent } from "@skui/list";
   import { ORANGE } from "@skui/style";
   import { SoftwareKey } from "@skui/softwarekey";
+  import { Separator } from "@skui/separator";
 </script>
 
 <AppWindow>
@@ -20,12 +21,20 @@
     <ListItem>
       <ListItemContent primary="KaiOS + Svelte" />
     </ListItem>
+    <Separator content="Separator Text" />
     <ListItem
       onClick={() => {
         router.goto("/detail");
       }}
     >
       <ListItemContent primary="Detail" secondary="Yes there is more content" />
+    </ListItem>
+    <Separator content="More content" />
+    <ListItem>
+      <ListItemContent primary="List are essential" />
+    </ListItem>
+    <ListItem>
+      <ListItemContent primary="So much content" secondary="yes..." />
     </ListItem>
   </List>
 

@@ -1,5 +1,10 @@
 # Svelte-KaiOS
 
+![Version](https://img.shields.io/npm/v/@skui/types)
+![Build](https://img.shields.io/github/workflow/status/wjtje/svelte-kaios/CI)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+![License](https://img.shields.io/github/license/wjtje/svelte-kaios)
+
 Make good looking KaiOS apps with svelte.
 
 > This is project is in alpha, expect things to break
@@ -7,16 +12,17 @@ Make good looking KaiOS apps with svelte.
 ## Index
 
 - Getting started
-- Things that are 'working'
-- Things that are currently being worked on
+- Packages
 - Notes
 
-## Getting started
+## Getting started with the example
 
 ### On a local machine
 
-```
-npm i
+```bash
+npm install
+cd example
+npm install
 npm run dev
 ```
 
@@ -24,21 +30,31 @@ npm run dev
 
 Change the script line in the public/index.html file
 
-```
-npm i
+```bash
+npm install
+cd example
+npm install
 npm run build && npm start -- --host
 ```
 
-## Things that are 'working'
+## Packages
 
-- Color palette
-- Fonts
-- Header
-- Status bar
-- AppWindow
-- List
+- appWindow
+- header
+- list
+- separator
+- softwareKey
+- statusbar
+- [style](https://github.com/wjtje/svelte-kaios/tree/main/packages/style)
+- types
 
 ## Notes
 
 - The dev build isn't working on a physical device, please use the production build if you are testing it on a physical device.
 - The status bar component doesn't work on a physical device, this component is only intendent as a development tool. DO NOT USE THIS IN PRODUCTION.
+
+## License
+
+MIT License
+
+Copyright (c) 2021 Wouter van der Wal

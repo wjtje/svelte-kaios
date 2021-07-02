@@ -11,7 +11,7 @@ The base of any page
 
 This is a basic example how this component is used
 
-```html
+```svelte
 <script lang="ts">
   import { AppWindow } from "@skui/appwindow";
   import { Header } from "@skui/header";
@@ -21,9 +21,9 @@ This is a basic example how this component is used
 </script>
 
 <AppWindow>
-  <header color="{ORANGE}">
+  <Header color={ORANGE}>
     <h1>Home</h1>
-  </header>
+  </Header>
 
   <List />
 

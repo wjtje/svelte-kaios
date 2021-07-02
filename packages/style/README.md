@@ -4,10 +4,10 @@ Common styles used by many components
 
 ## Index
 
-- colors
-- fonts
-- Usage in scss
-- Usage in typescript
+- [colors](https://github.com/wjtje/svelte-kaios/tree/main/packages/style#colors)
+- [fonts](https://github.com/wjtje/svelte-kaios/tree/main/packages/style#fonts)
+- [Usage in scss](https://github.com/wjtje/svelte-kaios/tree/main/packages/style#usage-in-scss)
+- [Usage in typescript](https://github.com/wjtje/svelte-kaios/tree/main/packages/style#usage-in-typescript)
 
 ## Colors
 
@@ -78,6 +78,7 @@ Common styles used by many components
 
 ```scss
 @import "node_modules/@skui/style/functions";
+
 H2 {
   @include KaiOS_font(H4);
   color: KaiOS_color(ORANGE);

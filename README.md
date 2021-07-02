@@ -39,14 +39,14 @@ npm run build && npm start -- --host
 
 ## Packages
 
-- appWindow
-- header
-- list
-- separator
-- softwareKey
-- statusbar
-- [style](https://github.com/wjtje/svelte-kaios/tree/main/packages/style)
-- types
+- [appWindow](https://github.com/wjtje/svelte-kaios/tree/main/packages/appWindow#readme)
+- [header](https://github.com/wjtje/svelte-kaios/tree/main/packages/header#readme)
+- [list](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#readme)
+- [separator](https://github.com/wjtje/svelte-kaios/tree/main/packages/separator#readme)
+- [softwareKey](https://github.com/wjtje/svelte-kaios/tree/main/packages/softwareKey#readme)
+- [statusbar](https://github.com/wjtje/svelte-kaios/tree/main/packages/statusbar#readme)
+- [style](https://github.com/wjtje/svelte-kaios/tree/main/packages/style#readme)
+- [types](https://github.com/wjtje/svelte-kaios/tree/main/packages/types#readme)
 
 ## Notes
 

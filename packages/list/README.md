@@ -43,7 +43,9 @@ This is an example of how a list is build
 This is the base of any list, it will handle the key inputs and scroll to the correct item. It is expected to use [ListItem](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#listitem-component) or [Separator](https://github.com/wjtje/svelte-kaios/tree/main/packages/separator#readme) as it children.
 
 ```svelte
-import {List} from "@skui/list";
+<script lang="ts">
+  import {List} from "@skui/list";
+</script>
 
 <List />
 ```

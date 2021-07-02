@@ -4,10 +4,10 @@ The base of any page
 
 ## Index
 
-- [Template](https://github.com/wjtje/svelte-kaios/tree/main/packages/appWindow#template)
+- [Basic usage](https://github.com/wjtje/svelte-kaios/tree/main/packages/appWindow#basic-usage)
 - [Props](https://github.com/wjtje/svelte-kaios/tree/main/packages/appWindow#props)
 
-## Template
+## Basic usage
 
 This is a basic example how this component is used
 

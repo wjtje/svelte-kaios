@@ -35,7 +35,7 @@ This is a basic example how this component is used
 </AppWindow>
 ```
 
-![Example](https://github.com/wjtje/svelte-kaios/tree/main/packages/appWindow/screenshots/example.png)
+![Example](https://github.com/wjtje/svelte-kaios/raw/main/packages/appWindow/screenshots/example.png)
 
 ## Props
 

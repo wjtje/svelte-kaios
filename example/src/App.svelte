@@ -1,4 +1,6 @@
 <script lang="ts">
+  import AppWindow from "@skui/appwindow/AppWindow.svelte";
+
   import { onMount } from "svelte";
   import { Route, router } from "tinro";
   import Detail from "./views/Detail.svelte";
@@ -10,7 +12,7 @@
   });
 </script>
 
-<Route path="/"><Home /></Route>
+<Route path="/"><AppWindow><Home /></AppWindow></Route>
 <Route path="/detail"><Detail /></Route>
 
 <style lang="scss">

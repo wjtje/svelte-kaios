@@ -3,44 +3,54 @@
 
   import { AppWindow } from "@skui/appwindow";
   import { Header } from "@skui/header";
-  import { List, ListItem, ListItemContent } from "@skui/list";
+  import { List, ListItem, ListItemContent, ListItemImage } from "@skui/list";
   import { ORANGE } from "@skui/style";
   import { SoftwareKey } from "@skui/softwarekey";
   import { Separator } from "@skui/separator";
+
+  import { getContext, onMount } from "svelte";
+  import type { Writable } from "svelte/store";
+  import type { softwareKeyFunctions } from "@skui/types";
+
+  const softKeyActionsWritable =
+    getContext<Writable<softwareKeyFunctions>>("softKeyActions");
+
+  onMount(() => {
+    softKeyActionsWritable.update((current) => ({
+      ...current,
+    }));
+  });
 </script>
 
-<AppWindow>
-  <Header color={ORANGE}>
-    <h1>Home</h1>
-  </Header>
+<Header color={ORANGE}>
+  <h1>Home</h1>
+</Header>
 
-  <List>
-    <ListItem>
-      <ListItemContent primary="Hello" secondary="World" />
-    </ListItem>
-    <ListItem>
-      <ListItemContent primary="KaiOS + Svelte" />
-    </ListItem>
-    <Separator content="Separator Text" />
-    <ListItem
-      onClick={() => {
-        router.goto("/detail");
-      }}
-    >
-      <ListItemContent primary="Detail" secondary="Yes there is more content" />
-    </ListItem>
-    <Separator content="More content" />
-    <ListItem>
-      <ListItemContent primary="List are essential" />
-    </ListItem>
-    <ListItem>
-      <ListItemContent primary="So much content" secondary="yes..." />
-    </ListItem>
-  </List>
+<List>
+  <ListItem>
+    <ListItemContent primary="ListItemContent" />
+  </ListItem>
+  <ListItem>
+    <ListItemContent
+      primary="ListItemContent"
+      secondary="With multi line support"
+    />
+  </ListItem>
 
-  <SoftwareKey>
-    <h5 slot="left">Left</h5>
-    <h5 slot="center">Select</h5>
-    <h5 slot="right">Right</h5>
-  </SoftwareKey>
-</AppWindow>
+  <Separator title="Subtitle" />
+
+  <ListItem>
+    <ListItemImage src="https://via.placeholder.com/32" alt="Placeholder" />
+    <ListItemContent primary="ListItemImage" secondary="Just add an image" />
+  </ListItem>
+</List>
+
+<SoftwareKey
+  onCenterClick={() => {
+    console.log("LEFT");
+  }}
+>
+  <h5 slot="left">Options</h5>
+  <h5 slot="center">Select</h5>
+  <h5 slot="right">Back</h5>
+</SoftwareKey>

@@ -1,7 +1,10 @@
 <script lang="ts">
   import { getContext, onMount } from "svelte";
+  import { PURPLE } from "@skui/style";
   import type { Writable } from "svelte/store";
-  import type { softwareKeyFunctions } from "@skui/types";
+  import type { softwareKeyFunctions, KaiOS_color } from "@skui/types";
+
+  export let hoverColor: KaiOS_color = PURPLE;
 
   // Default on click handler
   export let onClick = () => {
@@ -70,6 +73,7 @@
   tabindex={index}
   class:focus={index == activeIndex}
   bind:this={listItemElement}
+  style={`--hover: ${hoverColor[0]}`}
 >
   <slot />
 </section>
@@ -78,6 +82,7 @@
   @import "node_modules/@skui/style/functions";
 
   section {
+    --hover: KaiOS_color(PURPLE);
     height: 60px;
     padding: 0 5px;
     background-color: KaiOS_color(GS00);
@@ -85,7 +90,7 @@
     align-items: center;
 
     &.focus {
-      background-color: KaiOS_color(PURPLE);
+      background-color: var(--hover);
       color: KaiOS_color(GS00) !important;
 
       & :global(p) {

@@ -66,9 +66,10 @@ This component represents a single item inside a list, it will handle all the di
 
 ### Props
 
-| Name    | Type       | Description                                                         |
-| ------- | ---------- | ------------------------------------------------------------------- |
-| onClick | () => void | This function will be executed when even the user selects this item |
+| Name       | Type                                                                                 | Description                                                         | Documentation                                                                         |
+| ---------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| onClick    | () => void                                                                           | This function will be executed when even the user selects this item |
+| hoverColor | [KaiOS_color](https://github.com/wjtje/svelte-kaios/tree/main/packages/types#readme) | This defines the hover color of the listItem, it defaults to PURPLE | [@skui/styles](https://github.com/wjtje/svelte-kaios/tree/main/packages/style#colors) |
 
 ## ListItemContent component
 

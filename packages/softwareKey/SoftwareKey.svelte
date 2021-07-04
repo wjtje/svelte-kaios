@@ -3,6 +3,11 @@
   import type { Writable } from "svelte/store";
   import type { softwareKeyFunctions } from "@skui/types";
 
+  export let onLeftClick: (event: KeyboardEvent) => void = null!;
+  export let onRightClick: (event: KeyboardEvent) => void = null!;
+  export let onCenterClick: (event: KeyboardEvent) => void = null!;
+  export let onBackClick: (event: KeyboardEvent) => void = null!;
+
   // Get access to the current software key status
   const softKeyActionsWritable =
     getContext<Writable<softwareKeyFunctions>>("softKeyActions");
@@ -38,6 +43,14 @@
     // Add the event listener
     console.log(`KaiUI-svelte (SoftwareKey): Adding event listener`);
     document.body.addEventListener("keydown", handleKeyEvent);
+
+    // Update the actions if needed
+    softKeyActionsWritable.update((currentActions) => ({
+      left: onLeftClick ?? currentActions.left,
+      right: onRightClick ?? currentActions.right,
+      center: onCenterClick ?? currentActions.center,
+      back: onBackClick ?? currentActions.back,
+    }));
 
     return () => {
       // Remove the event listener

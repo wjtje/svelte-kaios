@@ -1,9 +1,9 @@
 <script lang="ts">
-  export let content: String;
+  export let title: string;
 </script>
 
 <div>
-  <h4>{content}</h4>
+  <h4>{title}</h4>
 </div>
 
 <style lang="scss">

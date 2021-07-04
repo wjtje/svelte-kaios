@@ -1,6 +1,6 @@
 {
   "name": "@skui/statusbar",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Svelte KaiOS UI - Statusbar",
   "main": "index.js",
   "scripts": {
@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/wjtje/svelte-kaios#readme",
   "dependencies": {
-    "@skui/style": "^0.2.0",
-    "@skui/types": "^0.2.0",
+    "@skui/style": "^0.2.1",
+    "@skui/types": "^0.2.1",
     "svelte": "^3.38.3"
   },
   "gitHead": "5f20aebfb700fbb238b2236f511264e40f0f191f"

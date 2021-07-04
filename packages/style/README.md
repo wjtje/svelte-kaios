@@ -4,10 +4,10 @@ Common styles used by many components
 
 ## Index
 
-- [colors](https://github.com/wjtje/svelte-kaios/tree/main/packages/style#colors)
-- [fonts](https://github.com/wjtje/svelte-kaios/tree/main/packages/style#fonts)
-- [Usage in scss](https://github.com/wjtje/svelte-kaios/tree/main/packages/style#usage-in-scss)
-- [Usage in typescript](https://github.com/wjtje/svelte-kaios/tree/main/packages/style#usage-in-typescript)
+- [colors](#colors)
+- [fonts](#fonts)
+- [Usage in scss](#usage-in-scss)
+- [Usage in typescript](#usage-in-typescript)
 
 ## Colors
 

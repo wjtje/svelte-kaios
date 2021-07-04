@@ -2,8 +2,8 @@
 
 ## Index
 
-- [softwareKeyFunctions](https://github.com/wjtje/svelte-kaios/tree/main/packages/header#softwarekeyfunctions)
-- [KaiOS_color](https://github.com/wjtje/svelte-kaios/tree/main/packages/header#kaios_color)
+- [softwareKeyFunctions](#softwarekeyfunctions)
+- [KaiOS_color](#kaios_color)
 
 ## softwareKeyFunctions
 

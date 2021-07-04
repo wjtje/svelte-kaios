@@ -2,8 +2,8 @@
 
 ## Index
 
-- [Basic usage](https://github.com/wjtje/svelte-kaios/tree/main/packages/header#basic-usage)
-- [Props](https://github.com/wjtje/svelte-kaios/tree/main/packages/header#props)
+- [Basic usage](#basic-usage)
+- [Props](#props)
 
 ## Basic usage
 

@@ -4,11 +4,11 @@ All the components you need to build your own list
 
 ## Index
 
-- [Basic usage](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#basic-usage)
-- [List component](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#list-component)
-- [ListItem component](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#listitem-component)
-- [ListItemContent component](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#listitemcontent-component)
-- [ListItemImage component](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#listitemimage-component)
+- [Basic usage](#basic-usage)
+- [List component](#list-component)
+- [ListItem component](#listitem-component)
+- [ListItemContent component](#listitemcontent-component)
+- [ListItemImage component](#listitemimage-component)
 
 ## Basic usage
 
@@ -40,11 +40,11 @@ This is an example of how a list is build
 
 ## List component
 
-This is the base of any list, it will handle the key inputs and scroll to the correct item. It is expected to use [ListItem](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#listitem-component) or [Separator](https://github.com/wjtje/svelte-kaios/tree/main/packages/separator#readme) as it children.
+This is the base of any list, it will handle the key inputs and scroll to the correct item. It is expected to use [ListItem](#listitem-component) or [Separator](https://github.com/wjtje/svelte-kaios/tree/main/packages/separator#readme) as it children.
 
 ```svelte
 <script lang="ts">
-  import {List} from "@skui/list";
+  import { List } from "@skui/list";
 </script>
 
 <List />
@@ -72,7 +72,7 @@ This component represents a single item inside a list, it will handle all the di
 
 ## ListItemContent component
 
-This component defines the layout of text inside a [ListItem](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#listitem-component). It has support for single and multi-line text and can be used in combination with a [ListItemImage](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#listitemimage-component) to add an image to a [ListItem](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#listitem-component).
+This component defines the layout of text inside a [ListItem](#listitem-component). It has support for single and multi-line text and can be used in combination with a [ListItemImage](#listitemimage-component) to add an image to a [ListItem](#listitem-component).
 
 ```svelte
 <script lang="ts">
@@ -101,7 +101,7 @@ This component defines the layout of text inside a [ListItem](https://github.com
 
 ## ListItemImage component
 
-This component allows you to add an image to a [ListItem](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#listitem-component).
+This component allows you to add an image to a [ListItem](#listitem-component).
 
 ```svelte
 <script lang="ts">

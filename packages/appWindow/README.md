@@ -4,8 +4,8 @@ The base of any page
 
 ## Index
 
-- [Basic usage](https://github.com/wjtje/svelte-kaios/tree/main/packages/appWindow#basic-usage)
-- [Props](https://github.com/wjtje/svelte-kaios/tree/main/packages/appWindow#props)
+- [Basic usage](#basic-usage)
+- [Props](#props)
 
 ## Basic usage
 

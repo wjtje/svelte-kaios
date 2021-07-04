@@ -2,9 +2,9 @@
 
 ## Index
 
-- [Basic usage](https://github.com/wjtje/svelte-kaios/tree/main/packages/softwareKey#basic-usage)
-- [Props](https://github.com/wjtje/svelte-kaios/tree/main/packages/softwareKey#props)
-- [Handle events](https://github.com/wjtje/svelte-kaios/tree/main/packages/softwareKey#handle-events)
+- [Basic usage](#basic-usage)
+- [Props](#props)
+- [Handle events](#handle-events)
 
 ## Basic usage
 

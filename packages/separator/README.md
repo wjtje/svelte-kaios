@@ -4,8 +4,8 @@ Easily create categories inside a list
 
 ## Index
 
-- [Basic usage](https://github.com/wjtje/svelte-kaios/tree/main/packages/separator#basic-usage)
-- [Props](https://github.com/wjtje/svelte-kaios/tree/main/packages/separator#props)
+- [Basic usage](#basic-usage)
+- [Props](#props)
 
 ## Basic usage
 

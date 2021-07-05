@@ -66,10 +66,12 @@ This component represents a single item inside a list, it will handle all the di
 
 ### Props
 
-| Name       | Type                                                                                 | Description                                                         | Documentation                                                                         |
-| ---------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| onClick    | () => void                                                                           | This function will be executed when even the user selects this item |
-| hoverColor | [KaiOS_color](https://github.com/wjtje/svelte-kaios/tree/main/packages/types#readme) | This defines the hover color of the listItem, it defaults to PURPLE | [@skui/styles](https://github.com/wjtje/svelte-kaios/tree/main/packages/style#colors) |
+| Name        | Type                                                                                 | Description                                                                                                                           | Documentation                                                                         |
+| ----------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| onClick     | () => void                                                                           | This function will be executed wheneven the user selects this item                                                                    |
+| onHover     | () -> void                                                                           | This function will be executed whenever the user hovers on this item for `onHoverTime`                                                |                                                                                       |
+| onHoverTime | number                                                                               | This defines how long the user needs to hover over this item before the `onHover` function will be called, It defaults to 3000ms (3s) |                                                                                       |
+| hoverColor  | [KaiOS_color](https://github.com/wjtje/svelte-kaios/tree/main/packages/types#readme) | This defines the hover color of the listItem, it defaults to PURPLE                                                                   | [@skui/styles](https://github.com/wjtje/svelte-kaios/tree/main/packages/style#colors) |
 
 ## ListItemContent component
 

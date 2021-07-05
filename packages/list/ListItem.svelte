@@ -11,6 +11,15 @@
     console.log(`KaiUI-svelte (ListItem (${index})): Default onClick`);
   };
 
+  // Default on hover handler
+  export let onHover = () => {
+    console.log(`KaiUI-svelte (ListItem (${index})): Default onHover`);
+  };
+
+  export let onHoverTime = 3000;
+
+  let onHoverTimeout: any;
+
   // Dom element
   let listItemElement: HTMLSelectElement | undefined;
 
@@ -27,13 +36,10 @@
   const softKeyActionsWritable =
     getContext<Writable<softwareKeyFunctions>>("softKeyActions");
 
-  // Listen to changes on the activeIndex
-  const activeIndexWritable = getContext<Writable<number>>("listActive");
-  let activeIndex = 0;
-
-  activeIndexWritable.subscribe((newActive) => {
-    activeIndex = newActive;
-
+  /**
+   * This function will update the selected item
+   */
+  function updateActive(activeIndex: number) {
     // Scroll to the active element
     if (index === activeIndex && listItemElement !== undefined) {
       const listContainer = listItemElement.parentElement;
@@ -53,19 +59,27 @@
           center: onClick,
         };
       });
+
+      // Set the onHover timeout
+      onHoverTimeout = setTimeout(onHover, onHoverTime);
+    } else {
+      clearTimeout(onHoverTimeout);
     }
+  }
+
+  // Listen to changes on the activeIndex
+  const activeIndexWritable = getContext<Writable<number>>("listActive");
+  let activeIndex = 1;
+
+  activeIndexWritable.subscribe((newActive) => {
+    activeIndex = newActive;
+
+    updateActive(activeIndex);
   });
 
+  // Make the first item active
   onMount(() => {
-    // Make the first item active
-    if (index === 1) {
-      softKeyActionsWritable.update((current) => {
-        return {
-          ...current,
-          center: onClick,
-        };
-      });
-    }
+    updateActive(activeIndex);
   });
 </script>
 

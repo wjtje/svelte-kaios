@@ -16,11 +16,14 @@
   div {
     overflow: hidden;
     margin: 0 5px;
-    flex-shrink: 1;
+    flex: 1 1;
   }
 
   p {
     margin: 4px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   p.pri {

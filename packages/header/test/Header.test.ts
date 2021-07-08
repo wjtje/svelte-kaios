@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 
-import { act, render } from "@testing-library/svelte";
+import { render } from "@testing-library/svelte";
 
 import Header from "../Header.svelte";
 import { ORANGE } from "@skui/style";

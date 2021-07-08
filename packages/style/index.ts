@@ -1,4 +1,4 @@
-import { KaiOS_color } from "@skui/types";
+import type { KaiOS_color } from "@skui/types";
 
 // Grayscale
 export const GS00: KaiOS_color = ["#ffffff", "#000000"];

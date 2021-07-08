@@ -26,13 +26,3 @@ jobs:
         run: npm run build
       - name: "Validate all the packages"
         run: npm run validate
-
-      - name: Install packages for the example
-        working-directory: example
-        run: npm i
-      - name: "Build the example"
-        working-directory: example
-        run: npm run build
-      - name: "Validate the example"
-        working-directory: example
-        run: npm run validate

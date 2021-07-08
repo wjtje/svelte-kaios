@@ -9,5 +9,5 @@
     "outDir": "./",
     "types": ["svelte", "jest"]
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "test"]
 }

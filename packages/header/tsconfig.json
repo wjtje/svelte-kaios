@@ -7,7 +7,7 @@
     "declaration": true,
     "sourceMap": false,
     "outDir": "./",
-    "types": ["svelte"]
+    "types": ["svelte", "jest"]
   },
   "exclude": ["node_modules"]
 }

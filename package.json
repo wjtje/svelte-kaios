@@ -14,42 +14,12 @@
   "scripts": {
     "postinstall": "lerna bootstrap && lerna link",
     "build": "lerna run build",
-    "validate": "lerna run validate",
-    "test": "jest packages --env=jsdom"
+    "validate": "lerna run validate"
   },
   "homepage": "https://github.com/wjtje/svelte-kaios#readme",
-  "jest": {
-    "transform": {
-      "^.+\\.js$": "babel-jest",
-      "^.+\\.svelte$": [
-        "svelte-jester",
-        {
-          "preprocess": true
-        }
-      ],
-      "^.+\\.ts$": "ts-jest"
-    },
-    "moduleFileExtensions": [
-      "js",
-      "ts",
-      "svelte"
-    ],
-    "setupFilesAfterEnv": [
-      "@testing-library/jest-dom/extend-expect"
-    ]
-  },
   "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/preset-env": "^7.14.7",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/svelte": "^3.0.3",
     "@tsconfig/svelte": "^2.0.1",
-    "@types/jest": "^26.0.24",
-    "@types/testing-library__jest-dom": "^5.14.0",
     "autoprefixer": "^10.2.6",
-    "babel-jest": "^27.0.6",
-    "jest": "^27.0.6",
-    "jsdom": "^16.6.0",
     "lerna": "^4.0.0",
     "postcss": "^8.3.5",
     "prettier": "^2.3.1",
@@ -57,10 +27,8 @@
     "sass": "^1.35.1",
     "svelte": "^3.38.3",
     "svelte-check": "^2.2.0",
-    "svelte-jester": "^1.7.0",
     "svelte-preprocess": "^4.7.3",
-    "ts-jest": "^27.0.3",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.4"
   },
   "dependencies": {}
 }

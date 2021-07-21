@@ -20,7 +20,7 @@
 </SoftwareKey>
 ```
 
-![Example](https://github.com/wjtje/svelte-kaios/raw/main/packages/header/softwareKey/example.png)
+![Example](https://github.com/wjtje/svelte-kaios/raw/main/packages/softwareKey/screenshots/example.png)
 
 ## Props
 

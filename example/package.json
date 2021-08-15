@@ -37,6 +37,7 @@
   "dependencies": {
     "@babel/runtime": "^7.14.6",
     "@skui/appwindow": "file:../packages/appWindow",
+    "@skui/dialog": "file:../packages/dialog",
     "@skui/header": "file:../packages/header",
     "@skui/list": "file:../packages/list",
     "@skui/separator": "file:../packages/separator",

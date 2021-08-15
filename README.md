@@ -40,6 +40,7 @@ npm run build && npm start -- --host
 ## Packages
 
 - [appWindow](https://github.com/wjtje/svelte-kaios/tree/main/packages/appWindow#readme)
+- [dialog](https://github.com/wjtje/svelte-kaios/tree/main/packages/dialog#readme)
 - [header](https://github.com/wjtje/svelte-kaios/tree/main/packages/header#readme)
 - [list](https://github.com/wjtje/svelte-kaios/tree/main/packages/list#readme)
 - [separator](https://github.com/wjtje/svelte-kaios/tree/main/packages/separator#readme)

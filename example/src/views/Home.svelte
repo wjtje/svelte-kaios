@@ -2,6 +2,7 @@
   import { router } from "tinro";
 
   import { AppWindow } from "@skui/appwindow";
+  import { Dialog } from "@skui/dialog";
   import { Header } from "@skui/header";
   import { List, ListItem, ListItemContent, ListItemImage } from "@skui/list";
   import { ORANGE } from "@skui/style";
@@ -44,6 +45,11 @@
     <ListItemContent primary="ListItemImage" secondary="Just add an image" />
   </ListItem>
 </List>
+
+<Dialog>
+  <h1>Hello World</h1>
+  <p>This is a dialog.</p>
+</Dialog>
 
 <SoftwareKey
   onCenterClick={() => {

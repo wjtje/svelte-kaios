@@ -26,5 +26,3 @@ jobs:
         run: npm run build
       - name: "Validate all the packages"
         run: npm run validate
-      - name: "Test all the packages"
-        run: npm run test

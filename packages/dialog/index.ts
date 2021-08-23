@@ -1,3 +1,4 @@
 import Dialog from "./Dialog.svelte";
+import { createDialog, removeDialog } from "./dialog"
 
-export { Dialog };
+export { Dialog, createDialog, removeDialog };

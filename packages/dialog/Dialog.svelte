@@ -1,13 +1,21 @@
 <script lang="ts">
+  import { fly } from "svelte/transition";
+
+  export let header: string | undefined = undefined;
+  export let content: string | undefined = undefined;
 </script>
 
-<section>
+<section transition:fly={{ y: 200, duration: 150 }}>
   <div class="backdrop" />
+  <!-- TODO: add a fade animation to the backdrop -->
 
   <div class="content">
     <slot>
-      <h1>Header</h1>
-      <p>Lorem Ipsum dolor sitet, sitconsecteur adipiscing amet, tempora?</p>
+      <h1>{header || "Header"}</h1>
+      <p>
+        {content ||
+          "Lorem Ipsum dolor sitet, sitconsecteur adipiscing amet, tempora?"}
+      </p>
     </slot>
   </div>
 </section>

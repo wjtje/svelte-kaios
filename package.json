@@ -20,7 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
-    "@tsconfig/svelte": "^2.0.1",
+    "@tsconfig/svelte": "^3.0.0",
     "autoprefixer": "^10.2.6",
     "lerna": "^4.0.0",
     "postcss": "^8.3.5",
